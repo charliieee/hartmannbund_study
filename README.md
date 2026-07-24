@@ -5,19 +5,22 @@ Analysis code for: *Consensus on delivery, divergence on content: physicians' ar
 Cross-sectional online survey (n = 362). The code reproduces all numbers, tables, and figures in the manuscript.
 
 ## Repository structure
-This is the Supplementary Document `supplement_document.pdf` handed in when submitting the paper. 
+This repository contains the Supplementary Information, the Pipeline and Information regarding the original data.
 
-| # | document | content |
-|------|--------|---------|
-| S1 | STROBE Flowchart | with STROBE Flowchart and Rules for Data Cleaning |
-| S2 | Participants Characteristics | Tables about the Participants and Comparision to Bundesärztekammer Statistic |
-| S3 | Sensitivity Analysis | Sensitivity Analysis for the Multivariable logistic regression of professional AI use (n = 322) in RQ2. Addition to Tab. 2. |
-| S4 | Codebook | free-text coding,regression categories, correction for 3 inconsistent records |
-| S5 | RQ3 | Age Group x Format, additional information for RQ3 |
-| S6 | Segment Comparision |Segment comparison of all preference options: %, χ², Cramér’s V, adj. p + pairwise post-hoc tests (Fisher, BH) with effect sizes|
-| S7 | Questionnaires |Questionnaire first in German (original) then in English (translated).  |
-| S8 | LCA |Sensitivity Analysis |
-| S9 | CHERRIES Checkliste |Checklist for Reporting Results of Internet E-Surveys|
+
+### Supplementary Information 
+This is the Supplementary Document `supplement_document.pdf` handed in when submitting the paper. 
+| #  | Document                     | Content                                                                                                   |
+|----|------------------------------|-----------------------------------------------------------------------------------------------------------|
+| S1 | STROBE Flowchart             | STROBE participant-flow diagram and data-cleaning rules                                                    |
+| S2 | Participant Characteristics  | Full sample distributions and comparison with Bundesärztekammer physician statistics                      |
+| S3 | Sensitivity Analysis         | Sensitivity analyses for the multivariable logistic regression of professional AI use (n = 322; adds to Table 2) |
+| S4 | Codebook                     | Free-text recoding, regression variable coding, and correction of three inconsistent records              |
+| S5 | RQ3 — Age × Format           | Preferred formats by age group; additional information for RQ3                                             |
+| S6 | Segment Comparison           | All preference options: %, χ², Cramér's V, BH-adjusted p, and pairwise post-hoc tests (Fisher, BH) with effect sizes |
+| S7 | Questionnaire                | Full instrument in German (original), followed by the English translation                                 |
+| S8 | Latent Class Analysis        | Four-class solution (sensitivity analysis)                                                                 |
+| S9 | CHERRIES Checklist           | Checklist for Reporting Results of Internet E-Surveys                                                      |
 
 ### Pipeline
 Scripts are run from the repository root in this order:
