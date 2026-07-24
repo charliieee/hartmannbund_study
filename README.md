@@ -35,7 +35,7 @@ Requires Python >= 3.10 with pandas, scipy, statsmodels, stepmix, matplotlib, op
 
 ## Data
 
-The survey data are **not** included in this repository. Data are available from the corresponding author on reasonable request, subject to ethics approval. Place `DataCleaned.csv` (cp1252, semicolon-separated) next to the scripts to run the pipeline.
+The survey data are **not** included in this repository. Data are available from the corresponding author on reasonable request, subject to ethics approval. In case of reasonable request, place `DataCleaned.csv` (cp1252, semicolon-separated) next to the scripts to run the pipeline.
 
 ## Citation
 
