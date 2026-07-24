@@ -1,6 +1,6 @@
 # A nationwide needs assessment for artificial intelligence training in continuing medical education
 
-Analysis code for: *Consensus on format, divergence on content: physicians' artificial intelligence training needs in continuing medical education*  **[Sophie-Charlotte Perret, Jonah Siebert, Jan Baumann Markus Schinle; Journal, DOI after acceptance]**.
+Analysis code for: *Consensus on delivery, divergence on content: physicians' artificial intelligence training needs in continuing medical education*  **[Sophie-Charlotte Perret, Jonah Siebert, Jan Baumann Markus Schinle; Journal, DOI after acceptance]**.
 
 Cross-sectional online survey (n = 362). The code reproduces all numbers, tables, and figures in the manuscript.
 
