@@ -28,11 +28,11 @@ Scripts are run from the repository root in this order:
 ```
 prepare_data.py        Data preparation: raw cleaned export -> analysis_dataset.csv
                        (all variable definitions, recoding rules, built-in checksums)
-results_R2_fig1.py     RQ1: descriptives + Figure 1 (use, areas, training, barriers)
-results_R3_table2.py   RQ2: logistic regression + sensitivity analyses (Table 2)
-results_R4_fig2.py     RQ3: training preferences (Figure 2)
-results_R5_fig3.py     RQ4a: segment comparisons with BH-FDR correction (Figure 3)
-results_R6_fig4.py     RQ4b: latent class analysis (Figure 4)
+results_R2.py     RQ1: descriptives + Figure 1 (use, areas, training, barriers)
+results_R3.py   RQ2: logistic regression + sensitivity analyses (Table 2)
+results_R4.py     RQ3: training preferences (Figure 2)
+results_R5.py     RQ4a: segment comparisons with BH-FDR correction (Figure 3)
+results_R6.py     RQ4b: latent class analysis (Figure 4)
 requirements.txt       Python dependencies
 ```
 
@@ -41,7 +41,7 @@ requirements.txt       Python dependencies
 ```bash
 pip install -r requirements.txt
 python prepare_data.py        # aborts if any checksum fails
-python results_R2_fig1.py     # then any results script, in any order
+python results_R2.py     # then any results script, in any order
 ```
 
 Requires Python >= 3.10 with pandas, scipy, statsmodels, stepmix, matplotlib, openpyxl.
