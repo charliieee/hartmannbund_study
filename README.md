@@ -1,11 +1,20 @@
 # A nationwide needs assessment for artificial intelligence training in continuing medical education
 
-Analysis code for: *Consensus on delivery, divergence on content: physicians' artificial intelligence training needs in continuing medical education*  **[Sophie-Charlotte Perret, Jonah Siebert, Jan Baumann Markus Schinle; Journal, DOI after acceptance]**.
+TITLE\
+    *Consensus on delivery, divergence on content: physicians' artificial intelligence training needs in continuing medical education* 
 
-Cross-sectional online survey (n = 362). The code reproduces all numbers, tables, and figures in the manuscript.
+AUTHORS\
+    Sophie-Charlotte Perret, University of Cambridge (0009-0009-0044-4633)\
+    Jonah Siebert, Offenburg University of Applied Sciences (0009-0001-7136-1175)\
+    Jan Baumann, Hartmannbund, Association of Doctors in Germany (0000-0003-3679-7341)\
+    Markus Schinle, Offenburg University of Applied Sciences (0000-0002-3132-0280)
+
+VERSION\
+    1.1\
+    Last updated: 27 October 2026
 
 ## Repository structure
-This repository contains the Supplementary Information, the Pipeline and Information regarding the original data.
+This repository contains the Supplementary Information, the Pipeline and Information regarding the original data, a cross-sectional online survey.
 
 
 ### Supplementary Information 
