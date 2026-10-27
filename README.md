@@ -13,7 +13,21 @@ VERSION\
     1.1\
     Last updated: 27 October 2026
 
-## Repository structure
+--------------------------------------------------------------------------------
+## 1. OVERVIEW OF THE STUDY
+--------------------------------------------------------------------------------
+
+This repository documents the data preparation and analysis reported in the accompanying short communication, a secondary analysis of one item of a cross-sectional survey of 363 physicians in Germany conducted between December 2025 and March 2026. 
+
+Respondents rated 19 digital tools on a six-point frequency scale (daily, weekly, monthly, less often, "would like to, but not available", "unclear what this is"). The paper reports the item "Differentialdiagnostik bzw. Clinical-Decision-Support (CDSS)" against the 18 other tools, its association with age, and its relation to self-reported AI use for diagnostic tasks.
+
+The repository provides the materials referenced in the manuscript as "Supplements", the analysis code, and the aggregated tables behind Figure 1 and Supplements S2 and S3.
+
+Individual-level microdata are NOT contained in this repository for privacy reasons. See Section 6, Data availability.
+
+--------------------------------------------------------------------------------
+## 2. Repository structure
+--------------------------------------------------------------------------------
 This repository contains the Supplementary Information, the Pipeline and Information regarding the original data, a cross-sectional online survey.
 
 
@@ -31,7 +45,29 @@ This is the Supplementary Document `supplement_document.pdf` handed in when subm
 | S8 | Latent Class Analysis        | Four-class solution (sensitivity analysis)                                                                 |
 | S9 | CHERRIES Checklist           | Checklist for Reporting Results of Internet E-Surveys                                                      |
 
-### Pipeline
+
+--------------------------------------------------------------------------------
+### 3. CONTENT DESCRIPTION
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+### 4. SOFTWARE ENVIRONMENT
+--------------------------------------------------------------------------------
+
+  Language:   Python 3.12
+  Libraries:  pandas, scipy (scipy.stats), statsmodels, stepmix, matplotlib, openpyxl
+   
+  Exact versions are pinned in code/requirements.txt. To create a matching environment:
+
+        python3.12 -m venv venv
+        source venv/bin/activate
+        pip install -r code/requirements.txt
+        
+
+--------------------------------------------------------------------------------
+### 5. REPRODUCING THE ANALYSIS
+--------------------------------------------------------------------------------
 Scripts are run from the repository root in this order:
 
 ```
@@ -45,25 +81,46 @@ results_R6.py     RQ4b: latent class analysis (Figure 4)
 requirements.txt       Python dependencies
 ```
 
-### How to run
+--------------------------------------------------------------------------------
+### 6. DATA AVAILABILITY
+--------------------------------------------------------------------------------
 
-```bash
-pip install -r requirements.txt
-python prepare_data.py        # aborts if any checksum fails
-python results_R2.py     # then any results script, in any order
-```
+   The survey data are **not** included in this repository. Data are available from the corresponding author on reasonable         request, subject to ethics approval. In case of reasonable request, place `DataCleaned.csv` (cp1252, semicolon-separated)       next to the scripts to run the pipeline.
 
-Requires Python >= 3.10 with pandas, scipy, statsmodels, stepmix, matplotlib, openpyxl.
 
-`prepare_data.py` validates nine checksums (e.g., n = 362 total; 341 with defined AI-use status; 192 users; 322 regression sample). If a checksum fails, your input data differ from the version used in the manuscript.
+--------------------------------------------------------------------------------
+### 7. ETHICS
+--------------------------------------------------------------------------------
 
-### Data
+    The study received favourable ethics opinions from the University of
+    Cambridge (Ref. 736, 15 May 2025) and Offenburg University of Applied
+    Sciences (Ref. 04-25, 27 June 2025). Data collection was conducted in
+    compliance with the General Data Protection Regulation (GDPR). A privacy
+    notice and participant information sheet preceded the questionnaire;
+    participation was conditional on informed consent.
 
-The survey data are **not** included in this repository. Data are available from the corresponding author on reasonable request, subject to ethics approval. In case of reasonable request, place `DataCleaned.csv` (cp1252, semicolon-separated) next to the scripts to run the pipeline.
 
-## Citation
+--------------------------------------------------------------------------------
+### 8. LICENCE
+--------------------------------------------------------------------------------
+   Code: MIT. The questionnaire and supplementary materials are published with the article.
 
-**[Citation + DOI after acceptance]**
 
-## License
-Code: MIT. The questionnaire and supplementary materials are published with the article.
+--------------------------------------------------------------------------------
+### 9. CITATION 
+--------------------------------------------------------------------------------
+   See CITATION.cff. Paper: to be updated
+
+
+--------------------------------------------------------------------------------
+### 10. CONTACT
+--------------------------------------------------------------------------------
+   Corresponding Authors:
+    Sophie Perret, University of Cambridge, scp64@cam.ac.uk 
+
+    Co-Authors: 
+    Jonah Siebert, Offenburg University of Applied Sciences, jonah.siebert@hs-offenburg.de 
+    Jan Baumann, Hartmannbund e.V.  
+    Markus Schinle, Offenburg University of Applied Sciences, markus.schinle@hs-offenburg.de 
+================================================================================
+
