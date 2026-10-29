@@ -111,7 +111,7 @@ requirements.txt       Python dependencies
 --------------------------------------------------------------------------------
 ### 9. CONTACT
 --------------------------------------------------------------------------------
-   Corresponding Authors:
+    Corresponding Authors:
     Sophie Perret, University of Cambridge, scp64@cam.ac.uk 
 
     Co-Authors: 
