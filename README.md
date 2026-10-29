@@ -1,7 +1,7 @@
 # A nationwide needs assessment for artificial intelligence training in continuing medical education
 
 TITLE\
-    *Consensus on delivery, divergence on content: physicians' artificial intelligence training needs in continuing medical education* 
+    *Physicians’ artificial intelligence training needs in continuing medical education: a nationwide survey across adoption groups* 
 
 AUTHORS\
     Sophie-Charlotte Perret, University of Cambridge (0009-0009-0044-4633)\
