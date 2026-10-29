@@ -77,6 +77,8 @@ results_R6.py     RQ4b: latent class analysis (Figure 4)
 requirements.txt       Python dependencies
 ```
 
+Scripts for further analysis requested on revision are in the folder analysis
+
 --------------------------------------------------------------------------------
 ### 5. DATA AVAILABILITY
 --------------------------------------------------------------------------------
