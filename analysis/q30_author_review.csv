@@ -1,0 +1,6 @@
+file,id,codes_before,codes_after,author,date,note
+q30_no_intention_coded.csv,238,DATA_LEGAL; RELIABILITY,REJECTION; RELIABILITY,S.P.,2026-10-27,"Umweltaspekt als Ablehnungsgrund, nicht Datenschutz/Recht"
+q30_no_intention_coded.csv,249,REJECTION; DATA_LEGAL; RELIABILITY,REJECTION; DATA_LEGAL; RELIABILITY; BENEFIT,S.P.,2026-10-27,"'absolut überflüssig' = kein Nutzen"
+q30_no_intention_coded.csv,290,ACCESS,ACCESS; BENEFIT,S.P.,2026-10-27,"vorläufig; zweite Durchsicht J.S."
+q30_no_intention_coded.csv,340,NONE,ACCESS,S.P.,2026-10-27,"Systeme nicht KI-fähig = Zugang"
+q30_interested_coded.csv,204,ACCESS; RELIABILITY,ACCESS; RELIABILITY; BENEFIT,S.P.,2026-10-27,""

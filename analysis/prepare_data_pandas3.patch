@@ -1,0 +1,15 @@
+--- a/prepare_data.py	2026-10-27 20:37:13.342124587 +0000
++++ b/prepare_data.py	2026-10-27 20:37:44.241119185 +0000
+@@ -26,9 +26,11 @@
+ # Strip rule (mandatory): the export contains non-breaking spaces (\xa0),
+ # e.g. "Krankenhaus (ambulant)\xa0". Without stripping, comparisons fail
+ # silently (e.g. df[C[11]].isin(HOSPITAL)).
++# pandas >= 3 stores text in the dedicated "str" dtype, for which col.dtype == "object" is False; the
++# dtype-agnostic test keeps the strip rule active under pandas 2 and 3 alike.
+ df = df.apply(
+     lambda col: col.str.replace("\xa0", " ").str.strip()
+-    if col.dtype == "object" else col
++    if pd.api.types.is_string_dtype(col) or pd.api.types.is_object_dtype(col) else col
+ )
+ 
+ C = df.columns  # column access by index (column names are question texts)

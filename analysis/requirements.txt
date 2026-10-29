@@ -1,0 +1,12 @@
+# Package versions used for the analyses in this folder (Python 3.13.17).
+# pandas 3.x also runs every script in this folder; the repository-root script prepare_data.py needs the
+# one-line change in prepare_data_pandas3.patch under pandas >= 3 (see README).
+pandas==2.3.3
+numpy==2.2.6
+scipy==1.18.1
+statsmodels==0.15.0
+patsy==1.0.3
+stepmix==3.0.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+openpyxl==3.1.5
