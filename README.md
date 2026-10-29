@@ -45,14 +45,8 @@ This is the Supplementary Document `supplement_document.pdf` handed in when subm
 | S8 | Latent Class Analysis        | Four-class solution (sensitivity analysis)                                                                 |
 | S9 | CHERRIES Checklist           | Checklist for Reporting Results of Internet E-Surveys                                                      |
 
-
 --------------------------------------------------------------------------------
-### 3. CONTENT DESCRIPTION
---------------------------------------------------------------------------------
-
-
---------------------------------------------------------------------------------
-### 4. SOFTWARE ENVIRONMENT
+### 3. SOFTWARE ENVIRONMENT
 --------------------------------------------------------------------------------
 
   Language:   Python 3.12
@@ -66,7 +60,7 @@ This is the Supplementary Document `supplement_document.pdf` handed in when subm
         
 
 --------------------------------------------------------------------------------
-### 5. REPRODUCING THE ANALYSIS
+### 4. REPRODUCING THE ANALYSIS
 --------------------------------------------------------------------------------
 Scripts are run from the repository root in this order:
 
@@ -82,14 +76,14 @@ requirements.txt       Python dependencies
 ```
 
 --------------------------------------------------------------------------------
-### 6. DATA AVAILABILITY
+### 5. DATA AVAILABILITY
 --------------------------------------------------------------------------------
 
    The survey data are **not** included in this repository. Data are available from the corresponding author on reasonable         request, subject to ethics approval. In case of reasonable request, place `DataCleaned.csv` (cp1252, semicolon-separated)       next to the scripts to run the pipeline.
 
 
 --------------------------------------------------------------------------------
-### 7. ETHICS
+### 6. ETHICS
 --------------------------------------------------------------------------------
 
     The study received favourable ethics opinions from the University of
@@ -101,19 +95,19 @@ requirements.txt       Python dependencies
 
 
 --------------------------------------------------------------------------------
-### 8. LICENCE
+### 7. LICENCE
 --------------------------------------------------------------------------------
    Code: MIT. The questionnaire and supplementary materials are published with the article.
 
 
 --------------------------------------------------------------------------------
-### 9. CITATION 
+### 8. CITATION 
 --------------------------------------------------------------------------------
    See CITATION.cff. Paper: to be updated
 
 
 --------------------------------------------------------------------------------
-### 10. CONTACT
+### 9. CONTACT
 --------------------------------------------------------------------------------
    Corresponding Authors:
     Sophie Perret, University of Cambridge, scp64@cam.ac.uk 
