@@ -33,17 +33,19 @@ This repository contains the Supplementary Information, the Pipeline and Informa
 
 ### Supplementary Information 
 This is the Supplementary Document `supplement_document.pdf` handed in when submitting the paper. 
-| #  | Document                     | Content                                                                                                   |
-|----|------------------------------|-----------------------------------------------------------------------------------------------------------|
-| S1 | STROBE Flowchart             | STROBE participant-flow diagram and data-cleaning rules                                                    |
-| S2 | Participant Characteristics  | Full sample distributions and comparison with Bundesärztekammer physician statistics                      |
-| S3 | Sensitivity Analysis         | Sensitivity analyses for the multivariable logistic regression of professional AI use (n = 322; adds to Table 2) |
-| S4 | Codebook                     | Free-text recoding, regression variable coding, and correction of three inconsistent records              |
-| S5 | RQ3 — Age × Format           | Preferred formats by age group; additional information for RQ3                                             |
-| S6 | Segment Comparison           | All preference options: %, χ², Cramér's V, BH-adjusted p, and pairwise post-hoc tests (Fisher, BH) with effect sizes |
-| S7 | Questionnaire                | Full instrument in German (original), followed by the English translation                                 |
-| S8 | Latent Class Analysis        | Four-class solution (sensitivity analysis)                                                                 |
-| S9 | CHERRIES Checklist           | Checklist for Reporting Results of Internet E-Surveys                                                      |
+
+| # | Document | Content |
+|---|---|---|
+| 1 | Supplementary Note 1 | Participant flow and exclusion rules |
+| 2 | Supplementary Note 2 | Participant characteristics and comparison with the physician population |
+| 3 | Supplementary Note 3 | Multivariate logistic regression of professional AI use |
+| 4 | Supplementary Note 4 | Codebook: free-text recoding, variable definitions and correction rules |
+| 5 | Supplementary Note 5 | Preferred format by age group (RQ3) |
+| 6 | Supplementary Note 6 | Training preferences across four adoption groups: omnibus tests, pairwise contrasts and equivalence bounds |
+| 7 | Supplementary Note 7 | Questionnaire |
+| 8 | Supplementary Note 8 | Latent class analysis of digital application use: item screen, model selection, convergence, classification certainty, the four-class solution, and sensitivity to coding and item set |
+| 9 | Supplementary Note 9 | CHERRIES checklist (Checklist for Reporting Results of Internet E-Surveys)|
+| 10 | Supplementary Note 10 | Adoption groups in detail: the shape of group differences, the two non-user groups, preferences by exposure, early-career physicians, the form of employer-provided AI, providers by sector, and respondents unsure of their AI use|
 
 --------------------------------------------------------------------------------
 ### 3. SOFTWARE ENVIRONMENT
