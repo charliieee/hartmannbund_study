@@ -32,7 +32,7 @@ This repository contains the Supplementary Information, the Pipeline and Informa
 
 
 ### Supplementary Information 
-This is the Supplementary Document `supplement_document.pdf` handed in when submitting the paper. 
+This is the Supplementary Document `supplement_revised.pdf` handed in when submitting the paper. 
 
 | # | Document | Content |
 |---|---|---|
