@@ -2,7 +2,7 @@
 Data preparation: DataCleaned.csv (n = 362) -> analysis variables.
 
 Encodes all decisions from the analysis sessions (July 2026).
-Cleaning of the raw data (405) -> DataCleaned (362) is NOT part of
+Cleaning of the raw data (403) -> DataCleaned (362) is NOT part of
 this script (see cleaning documentation / STROBE flow).
 
 Built-in checksums at the end: the script aborts if a mandatory
