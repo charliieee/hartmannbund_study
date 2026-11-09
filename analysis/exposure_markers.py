@@ -15,7 +15,7 @@ For each exposure and each of the 30 preference options tested in Supplementary 
      (i.e. unauthorised use adjusted for private use, and vice versa); covariate set of the Table 2
   4  Within users only (S1 covariates without use status)
 Summary measures: 'any governance topic' (data protection, ethics and law, critical appraisal) and 'any
-application topic' (diagnostic systems, large language models, practical implementation, treatment planning),
+clinical application topic' (diagnostic systems, treatment planning, diagnostic imaging), as in content_measures.py,
 with the same models.  Overlap of the two exposures and of each with use status is tabulated.
 
 Usage: python exposure_markers.py <analysis_dataset.csv> <outdir>
@@ -101,8 +101,8 @@ OPTIONS = [
 ]
 q28 = df[COLS[51]].fillna("")
 df["gov_any"] = (q28.str.contains("Datenmanagement", regex=False) | q28.str.contains("Ethische", regex=False) | q28.str.contains("Kritische Berwertung", regex=False)).astype(int)
-df["app_any"] = (q28.str.contains("Diagnosesysteme", regex=False) | q28.str.contains("Sprachmodellen", regex=False) | q28.str.contains("Praktische Implementierung", regex=False) | q28.str.contains("Therapieplanung", regex=False)).astype(int)
-SUMMARY = [("S", "Summary", "Any governance topic", None, "gov_any"), ("S", "Summary", "Any application topic", None, "app_any")]
+df["clin_any"] = (q28.str.contains("Diagnosesysteme", regex=False) | q28.str.contains("Therapieplanung", regex=False) | q28.str.contains("Bildgebung", regex=False)).astype(int)
+SUMMARY = [("S", "Summary", "Any governance topic", None, "gov_any"), ("S", "Summary", "Any clinical application topic", None, "clin_any")]
 
 COV = "ai_use + C(age4, Treatment('<40')) + male + competence_prof + ambulatory"
 COV_FULL = COV + " + trained + C(provision, Treatment('no'))"
@@ -162,8 +162,8 @@ res_pr = run("private_ai", "shadow", "private AI use (Q21)")
 # ----------------------------------------------------------------------------- joint view of the two exposures on the summary measures
 log("\n=== Joint view: any governance topic by unauthorised use x private AI use (defined status, valid Q32) ===")
 d = df[df.ai_use.notna() & df.shadow.notna()]
-t = d.groupby(["shadow", "private_ai"]).agg(n=("gov_any", "size"), gov_any_pct=("gov_any", "mean"), app_any_pct=("app_any", "mean"), ai_use_pct=("ai_use", "mean"))
-for c in ["gov_any_pct", "app_any_pct", "ai_use_pct"]:
+t = d.groupby(["shadow", "private_ai"]).agg(n=("gov_any", "size"), gov_any_pct=("gov_any", "mean"), clin_any_pct=("clin_any", "mean"), ai_use_pct=("ai_use", "mean"))
+for c in ["gov_any_pct", "clin_any_pct", "ai_use_pct"]:
     t[c] = (t[c] * 100).round(1)
 log(t.to_string())
 t.to_csv(os.path.join(OUTDIR, "governance_by_unauthorised_x_private.csv"))
